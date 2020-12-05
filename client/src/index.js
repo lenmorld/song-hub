@@ -2,10 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import Fetchy from './Fetchy'
+import Songs from './Songs'
+
+// import './styles.css'
 
 const App = () => (
   <div>
-    <Fetchy />
+    <Songs />
+    {/* <Fetchy /> */}
   </div>
 )
 
