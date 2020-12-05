@@ -4,7 +4,7 @@ const Fetchy = () => {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    fetch('/api/songs', {
+    fetch('/api/samples', {
       method: 'GET',
     })
       .then((raw) => raw.json())
