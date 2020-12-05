@@ -14,6 +14,24 @@ const Fetchy = () => {
       })
   }, [])
 
+  const handleFavorite = () => {
+    // TODO integrate with Songs List UI after
+    fetch('/api/songs/favorite', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        userId: 0,
+        songId: 'woho1234',
+      }),
+    })
+      .then((raw) => raw.json())
+      .then((res) => {
+        console.log(res)
+      })
+  }
+
   return (
     <div>
       <h1>Songs</h1>
@@ -24,6 +42,7 @@ const Fetchy = () => {
           </li>
         ))}
       </ul>
+      <button onClick={handleFavorite}>Favorite a song</button>
     </div>
   )
 }
