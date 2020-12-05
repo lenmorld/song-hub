@@ -1,7 +1,7 @@
 # Dev on both
 
 ```bash
-# runs concurrently on client/ and server/
+# runs concurrently to "watch" both client/ and server/
 npm run dev
 ```
 
