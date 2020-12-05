@@ -1,5 +1,7 @@
 const express = require('express')
 
+const spotifyClient = require('../spotify')
+
 const router = express.Router()
 
 const sampleData = {
@@ -25,8 +27,17 @@ const sampleData = {
   ],
 }
 
-router.get('/songs', (req, res) => {
+router.get('/samples', (req, res) => {
   res.json(sampleData)
+})
+
+// /songs?search=bad+guy
+router.get('/songs', async (req, res) => {
+  const { search } = req.query
+  console.log(`[SPOTIFY] searching ${search}...`)
+
+  const results = await spotifyClient.search(search)
+  res.json(results)
 })
 
 module.exports = router
