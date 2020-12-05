@@ -1,30 +1,21 @@
-// import built-in Node packages
+// import config file
 const express = require('express')
-// import express
+const body_parser = require('body-parser')
+const config = require('./config')
+
+// import routers and mount
+const songsRouter = require('./routes/songs')
+
 const server = express()
 
-const port = 3000
+server.use(body_parser.json()) // parse JSON (application/json content-type)
 
-// HTML routes
-server.get('/', (req, res) => {
-  res.sendFile(`${__dirname}/index.html`)
-})
+// REST API routes for UI
+// match with UI webpack dev server at webpack.config.js
+server.use('/api', songsRouter)
 
-// JSON routes
-server.get('/json', (req, res) => {
-  res.send(JSON.stringify({ name: 'Lenny again' }))
-})
-
-server.get('/products', (req, res) => {
-  res.send(
-    JSON.stringify([
-      { id: 1, name: 'toilet paper', brand: 'X', price: 199.99 },
-      { id: 2, name: 'hand sanitizer', brand: 'Y', price: 299.99 },
-    ]),
-  )
-})
+const port = config.port || 3000
 
 server.listen(port, () => {
-  // Callback function in ES6
   console.log(`Server listening at ${port}`)
 })
