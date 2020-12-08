@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
-	font-family: Helvetica, Arial, sans-sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-sans-serif;
 	background-color: black;
 	color: limegreen;
 	background-image: linear-gradient(rgb(30, 50, 100), rgb(4, 6, 12) 85%);
@@ -72,7 +74,7 @@ body {
 	justify-content: center; */
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
   }
   
   /*********************************/
@@ -88,7 +90,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	margin: 1rem;
+	margin: 1rem 1rem 1rem 0;
   }
   
   .item .delete_edit_button {
@@ -216,6 +218,10 @@ body {
 	font-weight: bold;
 	padding: 3px;
   }
+
+  form input:disabled {
+	  color: gray;
+  }
   
   form .submit,
   .options button {
@@ -295,7 +301,7 @@ body {
 	width: 90%;
     height: 90%;
 	margin: 0 auto;
-	border: 2px solid gray;
+	border: 2px solid limegreen;
 	padding: 20px;
 	background-color: black;
 	overflow: auto;
