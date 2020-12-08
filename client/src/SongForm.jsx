@@ -50,7 +50,7 @@ class SongForm extends React.Component {
       <div className="modal">
         <form>
           <div className="close_form">
-            <span onClick={this.props.onExit}>[🗙]</span>
+            <span onClick={this.props.onExit}>❌</span>
           </div>
           <h3>Create a new item</h3>
           <p>

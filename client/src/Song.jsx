@@ -1,22 +1,32 @@
 import React from 'react'
 
-const Item = (props) => (
+const Song = (props) => (
   <div className="item">
     <div className="delete_edit_button">
       <span
-        onClick={() => props.deleteItem(props.item.id)}
+        onClick={() =>
+          props.toggleItem
+            ? props.toggleItem(props.item)
+            : props.deleteItem(props.item.id)
+        }
         role="img"
         aria-label="close"
       >
-        ❎
+        {props.isAlreadyInList
+          ? props.isAlreadyInList(props.item.id)
+            ? '❎'
+            : '💚'
+          : '❎'}
       </span>
-      <span
-        onClick={() => props.editItem(props.item.id)}
-        role="img"
-        aria-label="edit"
-      >
-        📝
-      </span>
+      {!props.noEditButton && (
+        <span
+          onClick={() => props.editItem(props.item.id)}
+          role="img"
+          aria-label="edit"
+        >
+          📝
+        </span>
+      )}
     </div>
     <div className="left">
       <iframe
@@ -36,4 +46,4 @@ const Item = (props) => (
     </div>
   </div>
 )
-export default Item
+export default Song

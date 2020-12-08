@@ -4,7 +4,9 @@ import React, { useState, useEffect } from 'react'
 import Header from './Header'
 import SongList from './SongList'
 import SongForm from './SongForm'
-import Spotify from './Spotify'
+import Search from './Search'
+
+import fetchRequest from './helpers/fetchRequest'
 
 const data = {
   music: [
@@ -29,15 +31,21 @@ const data = {
   ],
 }
 
-console.log(data)
+// console.log(data)
 
 const username = 'Lenny'
 
-const Songs = () => {
+const SongsHome = ({ user }) => {
   const [list, setList] = useState(data.music)
   const [formVisible, setFormVisible] = useState(false)
   const [songToEdit, setSongToEdit] = useState(null)
   const [spotifyFormVisible, setSpotifyFormVisible] = useState(null)
+
+  useEffect(() => {
+    fetchRequest(`/users/${user.id}/songs`).then((items) => {
+      setList(items)
+    })
+  }, [user.id]) // fetch on load
 
   const showForm = () => {
     setFormVisible(true)
@@ -56,15 +64,34 @@ const Songs = () => {
     setSpotifyFormVisible(false)
   }
 
-  const createItem = (item) => {
+  const createItem = async (item) => {
     console.log('CREATE', item)
-    setList((prevList) => prevList.concat(item))
+    // setList((prevList) => prevList.concat(item))
+
+    const updatedSongs = await fetchRequest(`/users/${user.id}/songs`, {
+      method: 'POST',
+      body: item, // { id, title, artist, album }
+    })
+
+    console.log(updatedSongs)
+    setList(updatedSongs)
+
     hideForm()
   }
 
-  const deleteItem = (itemId) => {
+  const deleteItem = async (itemId) => {
     console.log('DELETE', itemId)
-    setList((prevList) => prevList.filter((_item) => _item.id !== itemId))
+    // setList((prevList) => prevList.filter((_item) => _item.id !== itemId))
+
+    const updatedSongs = await fetchRequest(
+      `/users/${user.id}/songs/${itemId}`,
+      {
+        method: 'DELETE',
+      },
+    )
+
+    console.log(updatedSongs)
+    setList(updatedSongs)
   }
 
   const editItem = (itemId) => {
@@ -73,26 +100,17 @@ const Songs = () => {
     showForm()
   }
 
-  const saveUpdatedItem = (item) => {
-    // copy by value, not by reference, using ES6 spread operator
-    const currentListItems = [...list]
-    // init new list
-    const newListItemsWithUpdatedItem = []
+  const saveUpdatedItem = async (item) => {
+    const updatedSongs = await fetchRequest(
+      `/users/${user.id}/songs/${item.id}`,
+      {
+        method: 'PUT',
+        body: item,
+      },
+    )
 
-    /*
-			loop through all items
-			if oldItem matches id of the updated one, replace it
-			else keep oldItem
-	  */
-    currentListItems.forEach((oldItem) => {
-      if (oldItem.id === item.id) {
-        newListItemsWithUpdatedItem.push(item)
-      } else {
-        newListItemsWithUpdatedItem.push(oldItem)
-      }
-    })
-
-    setList(newListItemsWithUpdatedItem)
+    console.log(updatedSongs)
+    setList(updatedSongs)
 
     hideForm()
   }
@@ -136,7 +154,7 @@ const Songs = () => {
         />
       )}
       {spotifyFormVisible && (
-        <Spotify
+        <Search
           onExit={hideSpotifyForm}
           toggleItem={toggleItemFromSpotify}
           isAlreadyInList={isAlreadyInList}
@@ -146,4 +164,4 @@ const Songs = () => {
   )
 }
 
-export default Songs
+export default SongsHome
