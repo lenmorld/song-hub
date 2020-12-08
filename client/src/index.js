@@ -2,13 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import Fetchy from './Fetchy'
-import Songs from './Songs'
+import SongsHome from './SongsHome'
 
 // import './styles.css'
 
+// TODO: implement LOGIN
+const user = {
+  id: 0,
+}
+
 const App = () => (
-  <div>
-    <Songs />
+  <div className="container">
+    <SongsHome user={user} />
     {/* <Fetchy /> */}
   </div>
 )
