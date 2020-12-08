@@ -9,6 +9,11 @@ body {
 	padding: 0;
 	font-size: 16px;
   }
+
+  .container {
+	  max-width: 80%;
+	  margin: 0 auto;
+  }
   
   h3 {
 	text-align: center;
@@ -59,18 +64,21 @@ body {
   }
   
   .items_grid {
-	display: grid;
+	/* display: grid;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
 	grid-template-columns: auto auto auto;
 	align-content: center;
-	justify-content: center;
+	justify-content: center; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
   }
   
   /*********************************/
   .item {
 	border: 1px solid limegreen;
-	width: 250px;
+	min-width: 250px;
 	height: 100px;
 	padding: 20px;
 	line-height: 25px;
@@ -80,6 +88,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
+	margin: 1rem;
   }
   
   .item .delete_edit_button {
@@ -284,10 +293,12 @@ body {
   
   .spotify_wrapper {
 	width: 90%;
+    height: 90%;
 	margin: 0 auto;
 	border: 2px solid gray;
 	padding: 20px;
 	background-color: black;
+	overflow: auto;
   }
   
   .spotify_input {
