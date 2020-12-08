@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineCloseSquare } from 'react-icons/ai'
 
 class SongForm extends React.Component {
   constructor(props) {
@@ -46,19 +47,23 @@ class SongForm extends React.Component {
   };
 
   render() {
+    const isEditMode = this.props.song;
+
     return (
       <div className="modal">
         <form>
           <div className="close_form">
-            <span onClick={this.props.onExit}>❌</span>
+            <span onClick={this.props.onExit}>
+              <AiOutlineCloseSquare />
+            </span>
           </div>
-          <h3>Create a new item</h3>
+          <h3>{isEditMode ? "Edit song" : "Create a new song"}</h3>
           <p>
             <label>ID:</label>
             <input
               name="id"
-              onChange={this.onChangeFormInput}
               value={this.state.id}
+              disabled={isEditMode}
             />
           </p>
           <p>
@@ -88,7 +93,7 @@ class SongForm extends React.Component {
 
           <div className="submit">
             <button onClick={this.onSubmitForm}>
-              {this.props.song ? "EDIT" : "CREATE"}
+              {isEditMode ? "EDIT" : "CREATE"}
             </button>
           </div>
         </form>

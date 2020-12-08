@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { AiOutlineCloseSquare } from 'react-icons/ai'
 
 import SongList from './SongList'
 
@@ -26,7 +27,9 @@ const Search = ({ onExit, isAlreadyInList, toggleItem }) => {
     <div className="spotify_modal">
       <div className="spotify_wrapper">
         <div className="close_form">
-          <span onClick={onExit}>❌</span>
+          <span onClick={onExit}>
+            <AiOutlineCloseSquare />
+          </span>
         </div>
         <h3>Spotify search</h3>
         <div className="spotify_input">
