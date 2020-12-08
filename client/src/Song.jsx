@@ -1,4 +1,10 @@
 import React from 'react'
+import {
+  AiOutlineCloseSquare,
+  AiOutlineDelete,
+  AiOutlineEdit,
+  AiOutlineHeart,
+} from 'react-icons/ai'
 
 const Song = (props) => (
   <div className="item">
@@ -12,11 +18,15 @@ const Song = (props) => (
         role="img"
         aria-label="close"
       >
-        {props.isAlreadyInList
-          ? props.isAlreadyInList(props.item.id)
-            ? '❎'
-            : '💚'
-          : '❎'}
+        {props.isAlreadyInList ? (
+          props.isAlreadyInList(props.item.id) ? (
+            <AiOutlineDelete />
+          ) : (
+            <AiOutlineHeart />
+          )
+        ) : (
+          <AiOutlineDelete />
+        )}
       </span>
       {!props.noEditButton && (
         <span
@@ -24,7 +34,7 @@ const Song = (props) => (
           role="img"
           aria-label="edit"
         >
-          📝
+          <AiOutlineEdit />
         </span>
       )}
     </div>
