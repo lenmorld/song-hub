@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 // import data from "./data";
 
-
 import SongList from './SongList'
 import SongForm from './SongForm'
 import Search from './Search'
@@ -9,7 +8,7 @@ import Search from './Search'
 import fetchRequest from './helpers/fetchRequest'
 
 const SongsHome = ({ user }) => {
-  const username = user.display_name;
+  const username = user.display_name
   const [list, setList] = useState([])
   const [formVisible, setFormVisible] = useState(false)
   const [songToEdit, setSongToEdit] = useState(null)
