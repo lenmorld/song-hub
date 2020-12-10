@@ -1,3 +1,4 @@
+<!-- NOTE THIS MATCHES THE ONE IN PUBLIC/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +8,11 @@
   </head>
   <body>
       <div id="app"></div>
+      <script>
+        window.message = '<%- message %>';
+        window.user = '<%- JSON.stringify(user) %>';
+        window.auth_url = '<%- auth_url %>';
+      </script>
       <script src="./bundle.js"></script>
   </body>
 </html>

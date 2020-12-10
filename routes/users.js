@@ -41,7 +41,8 @@ Object.values(user.songs)
 router.get('/users/:userId/songs', async (req, res) => {
   const { userId } = req.params
   const dbCollection = await DbConnection.getCollection('users')
-  const user = await dbCollection.findOne({ id: Number(userId) })
+  // const user = await dbCollection.findOne({ id: Number(userId) })
+  const user = await dbCollection.findOne({ id: userId })
 
   console.log('GET', user.songs)
 
@@ -50,7 +51,8 @@ router.get('/users/:userId/songs', async (req, res) => {
 
 router.post('/users/:userId/songs', async (req, res) => {
   const { userId } = req.params
-  const id = Number(userId)
+  // const id = Number(userId)
+  const id = userId
   const newSong = req.body
 
   console.log('userId newSong', userId, newSong)
@@ -94,7 +96,8 @@ router.post('/users/:userId/songs', async (req, res) => {
 
 router.put('/users/:userId/songs/:songId', async (req, res) => {
   const { userId, songId } = req.params
-  const id = Number(userId)
+  // const id = Number(userId)
+  const id = userId
   const songUpdates = req.body
 
   const dbCollection = await DbConnection.getCollection('users')
@@ -144,7 +147,8 @@ router.put('/users/:userId/songs/:songId', async (req, res) => {
 
 router.delete('/users/:userId/songs/:songId', async (req, res) => {
   const { userId, songId } = req.params
-  const id = Number(userId)
+  // const id = Number(userId)
+  const id = userId
 
   const dbCollection = await DbConnection.getCollection('users')
   const user = await dbCollection.findOne({ id })
