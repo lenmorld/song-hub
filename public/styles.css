@@ -74,7 +74,7 @@ body {
 	justify-content: center; */
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/* justify-content: space-between; */
   }
   
   /*********************************/
@@ -229,19 +229,20 @@ body {
   }
   
   form .submit button,
-  .options button {
-	padding: 10px;
+  .options button, .spotify-button {
+	padding: 10px 15px;
 	border-radius: 500px;
 	color: white;
 	background-color: green;
-	width: 100px;
+	/* width: 100px; */
 	border: none;
   
 	margin-top: 10px;
   }
   
   form .submit button:hover,
-  .options button:hover {
+  .options button:hover,
+  .spotify-button:hover {
 	background-color: limegreen;
 	cursor: pointer;
   }

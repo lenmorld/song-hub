@@ -1,36 +1,43 @@
 import React from 'react'
 
-const tagline = "'Hub' your "
-
-function word() {
-  return 'music'
-}
+const tagline = "'Hub' your music"
 
 const styles = {
   tagline_span: {
-    fontFamily: 'Courier New, Arial',
-    color: 'lime',
+    // fontFamily: 'Courier New, Arial',
+    color: 'white',
   },
 }
 
 const Header = () => {
   return (
-    <header>
+    <header
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+      }}
+    >
       <h1>
         <span className="circle" role="img" aria-label="logo">
           📻
         </span>
         Songhub
         <div style={{ fontSize: '11px', marginLeft: '50px' }}>
-          {/* this is a comment */}
-          <span style={styles.tagline_span}>
-            {tagline}
-            {word()}
-          </span>
+          <span style={styles.tagline_span}>{tagline}</span>
         </div>
       </h1>
       <div>
-        <a href="/logout">Logout</a>
+        <a
+          className="spotify-button"
+          style={{
+            textDecoration: 'none',
+          }}
+          href="/logout"
+        >
+          LOG OUT
+        </a>
       </div>
     </header>
   )
