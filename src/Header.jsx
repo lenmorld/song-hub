@@ -29,6 +29,9 @@ const Header = () => {
           </span>
         </div>
       </h1>
+      <div>
+        <a href="/logout">Logout</a>
+      </div>
     </header>
   )
 }

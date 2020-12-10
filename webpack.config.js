@@ -4,7 +4,8 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
+    // path: path.resolve(__dirname, 'views'),
     filename: 'bundle.js',
   },
   devtool: 'eval-cheap-module-source-map',
@@ -16,7 +17,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['@babel/preset-env']],
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+            plugins: ["@babel/plugin-proposal-class-properties", "@babel/plugin-transform-runtime"]
           },
         },
       },
@@ -26,7 +28,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'public'),
     // compress: true
     port: 4000,
     proxy: {

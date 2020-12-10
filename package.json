@@ -1,23 +1,19 @@
 {
-  "name": "songhub",
+  "name": "songhub-server",
   "version": "1.0.0",
-  "description": "```bash cd client/ # runs webpack-dev-server on 4000 npm start ```",
-  "main": ".eslintrc.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\" "
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lenmorld/song-hub.git"
+    "start": "node index.js",
+    "dev:server": "nodemon index.js",
+    "dev:client": "webpack serve",
+    "build": "webpack",
+    "dev": "concurrently \"npm run dev:server\" \"cd client && npm start\" "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lenmorld/song-hub/issues"
-  },
-  "homepage": "https://github.com/lenmorld/song-hub#readme",
   "devDependencies": {
     "concurrently": "^5.3.0",
     "eslint": "^7.15.0",
@@ -28,6 +24,31 @@
     "eslint-plugin-prettier": "^3.2.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "nodemon": "^2.0.6",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@webpack-cli/serve": "^1.1.0",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "qs": "^6.9.4",
+    "@babel/runtime": "^7.12.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0"
   }
 }

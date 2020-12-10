@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react'
 // import data from "./data";
 
-import Header from './Header'
+
 import SongList from './SongList'
 import SongForm from './SongForm'
 import Search from './Search'
 
 import fetchRequest from './helpers/fetchRequest'
 
-const username = 'Lenny'
-
 const SongsHome = ({ user }) => {
+  const username = user.display_name;
   const [list, setList] = useState([])
   const [formVisible, setFormVisible] = useState(false)
   const [songToEdit, setSongToEdit] = useState(null)
@@ -110,7 +109,6 @@ const SongsHome = ({ user }) => {
 
   return (
     <div>
-      <Header />
       <div className="options">
         <button onClick={showForm}>NEW SONG</button>
         <button onClick={showSpotifyForm}>SEARCH</button>
