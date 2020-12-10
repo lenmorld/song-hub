@@ -8,7 +8,7 @@
     "start": "npm run build && node index.js",
     "dev:server": "nodemon index.js",
     "dev:client": "webpack serve",
-    "build": "webpack",
+    "build": "./node_modules/webpack/bin/webpack.js --progress",
     "dev": "concurrently \"npm run build && npm run dev:server\" \"npm run dev:client\" "
   },
   "keywords": [],
