@@ -1,4 +1,5 @@
 const path = require('path')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   mode: 'development',
@@ -18,12 +19,16 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ["@babel/plugin-proposal-class-properties", "@babel/plugin-transform-runtime"]
+            plugins: [
+              '@babel/plugin-proposal-class-properties',
+              '@babel/plugin-transform-runtime',
+            ],
           },
         },
       },
     ],
   },
+  plugins: [new Dotenv()], // for dotenv-webpack
   resolve: {
     extensions: ['.js', '.jsx'],
   },
