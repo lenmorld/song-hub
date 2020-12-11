@@ -2,15 +2,15 @@
   "name": "songhub-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "14.x",
     "npm": "6.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev:server": "nodemon index.js",
+    "start": "node server.js",
+    "dev:server": "nodemon server.js",
     "dev:client": "webpack serve",
     "build": "webpack",
     "dev": "concurrently \"npm run build && npm run dev:server\" \"npm run dev:client\" ",
