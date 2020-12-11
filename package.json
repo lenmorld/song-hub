@@ -14,7 +14,7 @@
     "dev:client": "webpack serve",
     "build": "webpack",
     "dev": "concurrently \"npm run build && npm run dev:server\" \"npm run dev:client\" ",
-    "heroku-postbuild": "webpack -p --progress"
+    "heroku-postbuild": "webpack --progress"
   },
   "keywords": [],
   "author": "",
