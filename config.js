@@ -1,4 +1,5 @@
-// init. environment variables
+// init. and expose environment variables for SERVER
+// for UI side, it's on webpack.config.js using Dotenv-webpack
 const dotenv = require('dotenv')
 
 dotenv.config()
