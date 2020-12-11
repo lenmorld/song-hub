@@ -9,11 +9,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && node index.js",
+    "start": "node index.js",
     "dev:server": "nodemon index.js",
     "dev:client": "webpack serve",
     "build": "webpack",
-    "dev": "concurrently \"npm run build && npm run dev:server\" \"npm run dev:client\" "
+    "dev": "concurrently \"npm run build && npm run dev:server\" \"npm run dev:client\" ",
+    "heroku-postbuild": "webpack --progress"
   },
   "keywords": [],
   "author": "",
