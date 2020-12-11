@@ -6,10 +6,9 @@ import Header from './Header'
 import SongsHome from './SongsHome'
 import Login from './Login'
 
-// TODO: put in config
 // allow webpack-dev-server to skip login
 // useful for just working on non-login related UI
-const DEV_MODE = false
+const { DEV_MODE_CLIENT } = process.env
 const DEV_MODE_USER = {
   display_name: 'Lenny',
   email: 'lenmorld@gmail.com',
@@ -30,12 +29,6 @@ const DEV_MODE_USER = {
 // FIXME: use SSR instead to inject this server-side
 // and just hydrate the frontend
 
-// TODO: implement LOGIN
-// debugger;
-// const user = {
-//   id: 0,
-// }
-
 const App = () => {
   let user
   try {
@@ -44,7 +37,7 @@ const App = () => {
     user = null // not logged in yet
   }
 
-  if (DEV_MODE) {
+  if (DEV_MODE_CLIENT) {
     user = DEV_MODE_USER
   }
 
