@@ -9,19 +9,22 @@ import Login from './Login'
 // allow webpack-dev-server to skip login
 // useful for just working on non-login related UI
 const { DEV_MODE_CLIENT } = process.env
-const DEV_MODE_USER = {
-  display_name: 'Lenny',
-  email: 'lenmorld@gmail.com',
-  external_urls: {
-    spotify: 'https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom',
-  },
-  followers: { href: null, total: 6 },
-  href: 'https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom',
-  id: '3wytubqe8gdcanop7i7hnzlom',
-  // images: [{…}]
-  type: 'user',
-  uri: 'spotify:user:3wytubqe8gdcanop7i7hnzlom',
-}
+
+const DEV_MODE_USER = null
+
+// const DEV_MODE_USER = {
+//   display_name: 'Lenny',
+//   email: 'lenmorld@gmail.com',
+//   external_urls: {
+//     spotify: 'https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom',
+//   },
+//   followers: { href: null, total: 6 },
+//   href: 'https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom',
+//   id: '3wytubqe8gdcanop7i7hnzlom',
+//   // images: [{…}]
+//   type: 'user',
+//   uri: 'spotify:user:3wytubqe8gdcanop7i7hnzlom',
+// }
 
 // import './styles.css'
 
@@ -37,9 +40,9 @@ const App = () => {
     user = null // not logged in yet
   }
 
-  if (DEV_MODE_CLIENT) {
-    user = DEV_MODE_USER
-  }
+  // if (DEV_MODE_CLIENT) {
+  //   user = DEV_MODE_USER
+  // }
 
   // TODO: implement as context instead
   return (

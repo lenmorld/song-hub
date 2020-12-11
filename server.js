@@ -1,6 +1,6 @@
 // import config file
 const express = require('express')
-const body_parser = require('body-parser')
+const bodyParser = require('body-parser')
 
 const config = require('./config')
 
@@ -12,11 +12,9 @@ const songsRouter = require('./routes/songs')
 const usersRouter = require('./routes/users')
 const authRouter = require('./routes/auth')
 
-const { authorizationUrl } = require('./helpers/spotifyOauth')
-
 server.set('view engine', 'ejs')
 
-server.use(body_parser.json()) // parse JSON (application/json content-type)
+server.use(bodyParser.json()) // parse JSON (application/json content-type)
 
 server.use('/', authRouter)
 

@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 
-const DbConnection = require('../db')
+const DbConnection = require('../services/db')
 
 const { getTimeStamp } = require('../helpers/dateTime')
 
@@ -44,7 +44,7 @@ router.get('/users/:userId/songs', async (req, res) => {
   // const user = await dbCollection.findOne({ id: Number(userId) })
   const user = await dbCollection.findOne({ id: userId })
 
-  console.log('GET', user.songs)
+  // console.log('GET', user.songs)
 
   res.json(Object.values(user.songs))
 })

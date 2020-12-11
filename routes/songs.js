@@ -1,14 +1,16 @@
 const express = require('express')
 const cors = require('cors')
 
-const spotifyClient = require('../spotify')
-const DbConnection = require('../db')
+const SpotifyClient = require('../services/spotify')
+const DbConnection = require('../services/db')
 
 const { getTimeStamp } = require('../helpers/dateTime')
 
 const router = express.Router()
 
 router.use(cors())
+
+const twoLeggedClient = SpotifyClient.getTwoLeggedClient()
 
 const sampleData = {
   songs: [
@@ -42,7 +44,7 @@ router.get('/songs/search', async (req, res) => {
   const { search } = req.query
   console.log(`[SPOTIFY] searching ${search}...`)
 
-  const results = await spotifyClient.search(search)
+  const results = await twoLeggedClient.search(search)
   res.json(results)
 })
 
