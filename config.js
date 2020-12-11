@@ -15,4 +15,5 @@ module.exports = {
   mongo_db_connection_string: process.env.MONGO_DB_CONNECTION_STRING,
   spotify_client_id: process.env.SPOTIFY_CLIENT_ID,
   spotify_client_secret: process.env.SPOTIFY_CLIENT_SECRET,
+  heroku_url: process.env.HEROKU_URL,
 }
