@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import SongList from './SongList'
 import SongForm from './SongForm'
 import Search from './Search'
+import Playlists from './Playlists'
 
 import fetchRequest from './helpers/fetchRequest'
 
@@ -108,16 +109,14 @@ const SongsHome = ({ user }) => {
 
   return (
     <div>
+      <Playlists />
+      {/* name={`${username}'s favorites`} */}
+      <h2>Favorites</h2>
       <div className="options">
-        <button onClick={showForm}>NEW SONG</button>
+        <button onClick={showForm}>ADD NEW</button>
         <button onClick={showSpotifyForm}>SEARCH</button>
       </div>
-      <SongList
-        name={`${username}'s list`}
-        list={list}
-        deleteItem={deleteItem}
-        editItem={editItem}
-      />
+      <SongList list={list} deleteItem={deleteItem} editItem={editItem} />
       {formVisible && (
         <SongForm
           onSubmit={songToEdit ? saveUpdatedItem : createItem}

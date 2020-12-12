@@ -25,7 +25,7 @@ const urlDevelopment = 'http://localhost:3000'
 const baseUrl = config.node_env === 'production' ? urlProduction : urlDevelopment
 const redirectUri = `${baseUrl}/callback`
 
-console.log(redirectUri)
+// console.log("redirectUri", redirectUri)
 
 class SpotifyClient {
   static threeLeggedClient = null
@@ -72,7 +72,7 @@ class SpotifyClient {
   // grant_type: client-credentials
   async getTwoLeggedAccessToken() {
     if (this.savedAccessToken) {
-      console.log('[SPOTIFY] Using saved 2L access token: ', this.savedAccessToken)
+      // console.log('[SPOTIFY] Using saved 2L access token: ', this.savedAccessToken)
       return this.savedAccessToken
     }
 
@@ -88,7 +88,7 @@ class SpotifyClient {
     })
 
     this.savedAccessToken = result.data.access_token
-    console.log('[SPOTIFY] Saving new 2L Access token: ', this.savedAccessToken)
+    // console.log('[SPOTIFY] Saving new 2L Access token: ', this.savedAccessToken)
     return this.savedAccessToken
   }
 
@@ -150,7 +150,7 @@ class SpotifyClient {
     }
 
     this.savedAccessToken = result.data.access_token
-    console.log('[SPOTIFY] 3L Access token saved: ', this.savedAccessToken)
+    // console.log('[SPOTIFY] 3L Access token saved: ', this.savedAccessToken)
   }
 
   getThreeLeggedAccessToken() {
@@ -158,7 +158,7 @@ class SpotifyClient {
       throw "[SPOTIFY] Spotify ERROR: 3-Legged auth code flow not initialized!"
     }
 
-    console.log('[SPOTIFY] Using saved 3L access token: ', this.savedAccessToken)
+    // console.log('[SPOTIFY] Using saved 3L access token: ', this.savedAccessToken)
     return this.savedAccessToken
   }
 
@@ -179,6 +179,25 @@ class SpotifyClient {
     const userInfo = result.data
     // console.log(userInfo)
     return userInfo
+  }
+
+  async getMePlaylists() {
+    const userInfoEndpoint = 'https://api.spotify.com/v1/me/playlists'
+
+    const accessToken = this.getThreeLeggedAccessToken()
+
+    const result = await axios({
+      method: 'GET',
+      url: userInfoEndpoint,
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        Accept: 'application/json',
+      },
+    })
+
+    const playlists = result.data
+    // console.log(">>>> playlists ", playlists)
+    return playlists
   }
 
   getAuthorizationUrl({ scope, state }) {

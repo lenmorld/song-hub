@@ -11,6 +11,7 @@ const port = config.port || 3000
 const songsRouter = require('./routes/songs')
 const usersRouter = require('./routes/users')
 const authRouter = require('./routes/auth')
+const meRouter = require('./routes/me') // 3L endpoints for current user
 
 server.set('view engine', 'ejs')
 
@@ -22,6 +23,7 @@ server.use('/', authRouter)
 // match with UI webpack dev server at webpack.config.js
 server.use('/api', songsRouter)
 server.use('/api', usersRouter)
+server.use('/api', meRouter)
 
 // static folder - put this after all routes
 // so public/index.html doesn't override views/ folder served by routes

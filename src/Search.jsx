@@ -31,6 +31,7 @@ const Search = ({ onExit, isAlreadyInList, toggleItem }) => {
             <AiOutlineCloseSquare />
           </span>
         </div>
+        {/* content */}
         <h3>Spotify search</h3>
         <div className="spotify_input">
           <input type="text" onChange={trackSearchTerm} />
@@ -42,6 +43,7 @@ const Search = ({ onExit, isAlreadyInList, toggleItem }) => {
           toggleItem={toggleItem}
           noEditButton
         />
+        {/* end of content */}
       </div>
     </div>
   )

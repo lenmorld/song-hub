@@ -13,7 +13,6 @@ const SongList = (props) => {
   } = props
   return (
     <div>
-      <h3>{name}</h3>
       <div className="items_grid">
         {list.map((item) => (
           <Song
