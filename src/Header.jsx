@@ -9,7 +9,7 @@ const styles = {
   },
 }
 
-const Header = () => {
+const Header = ({ user }) => {
   return (
     <header
       style={{
@@ -17,6 +17,7 @@ const Header = () => {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
+        flexWrap: 'wrap',
       }}
     >
       <h1>
@@ -28,16 +29,30 @@ const Header = () => {
           <span style={styles.tagline_span}>{tagline}</span>
         </div>
       </h1>
-      <div>
-        <a
-          className="spotify-button"
-          style={{
-            textDecoration: 'none',
-          }}
-          href="/logout"
-        >
-          LOG OUT
-        </a>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ marginRight: '1rem' }}>
+          <img
+            src={user.images[0].url}
+            style={{
+              width: '75px',
+              height: '75px',
+              objectFit: 'cover',
+              borderRadius: '50%',
+            }}
+          />
+        </div>
+
+        <div>
+          <a
+            className="spotify-button"
+            style={{
+              textDecoration: 'none',
+            }}
+            href="/logout"
+          >
+            LOG OUT
+          </a>
+        </div>
       </div>
     </header>
   )
