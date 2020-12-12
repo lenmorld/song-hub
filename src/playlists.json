@@ -1,0 +1,820 @@
+{
+    "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom/playlists?offset=0&limit=20",
+    "items": [
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1rOAtVkFlq9ST525fA2BML"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1rOAtVkFlq9ST525fA2BML",
+        "id": "1rOAtVkFlq9ST525fA2BML",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b273342eeefed9d0c9472cc71b33ab67616d0000b273c77e4de195d9182d5f917825ab67616d0000b273ecdb914ea9cbbb31c5a6b71bab67616d0000b273fc192c54d1823a04ffb6c8c9",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b273342eeefed9d0c9472cc71b33ab67616d0000b273c77e4de195d9182d5f917825ab67616d0000b273ecdb914ea9cbbb31c5a6b71bab67616d0000b273fc192c54d1823a04ffb6c8c9",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b273342eeefed9d0c9472cc71b33ab67616d0000b273c77e4de195d9182d5f917825ab67616d0000b273ecdb914ea9cbbb31c5a6b71bab67616d0000b273fc192c54d1823a04ffb6c8c9",
+            "width": 60
+          }
+        ],
+        "name": "electro beats",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NyxlZGNmYTc1OWE5NWRiMmM4YmExMDE1NmFiZGE2MGM0OGQ3ZTAwZmFh",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1rOAtVkFlq9ST525fA2BML/tracks",
+          "total": 5
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1rOAtVkFlq9ST525fA2BML"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3O5uIzVwmec5Ie4Yrss0xo"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3O5uIzVwmec5Ie4Yrss0xo",
+        "id": "3O5uIzVwmec5Ie4Yrss0xo",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b273342eeefed9d0c9472cc71b33ab67616d0000b2734e0362c225863f6ae2432651ab67616d0000b273d3f46bd007dc59d8ef2a5894ab67616d0000b273db3d7550e11f7a132fb81c9f",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b273342eeefed9d0c9472cc71b33ab67616d0000b2734e0362c225863f6ae2432651ab67616d0000b273d3f46bd007dc59d8ef2a5894ab67616d0000b273db3d7550e11f7a132fb81c9f",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b273342eeefed9d0c9472cc71b33ab67616d0000b2734e0362c225863f6ae2432651ab67616d0000b273d3f46bd007dc59d8ef2a5894ab67616d0000b273db3d7550e11f7a132fb81c9f",
+            "width": 60
+          }
+        ],
+        "name": "Nights and city lights",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MjEsNjM3ODU3NjllNDAwZjJlNGJmZmFlZmE3N2RjZGQwYTA5ZDc2YmIwZg==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3O5uIzVwmec5Ie4Yrss0xo/tracks",
+          "total": 15
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3O5uIzVwmec5Ie4Yrss0xo"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3wQ2XcvpPycmEbNuLfCQvv"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3wQ2XcvpPycmEbNuLfCQvv",
+        "id": "3wQ2XcvpPycmEbNuLfCQvv",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2734e0362c225863f6ae2432651ab67616d0000b273a11911d197f2ed4bb8ada0a7ab67616d0000b273ef94414ec17821e136bce37cab67616d0000b273f3b2d48ea64b688833b1f93f",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2734e0362c225863f6ae2432651ab67616d0000b273a11911d197f2ed4bb8ada0a7ab67616d0000b273ef94414ec17821e136bce37cab67616d0000b273f3b2d48ea64b688833b1f93f",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2734e0362c225863f6ae2432651ab67616d0000b273a11911d197f2ed4bb8ada0a7ab67616d0000b273ef94414ec17821e136bce37cab67616d0000b273f3b2d48ea64b688833b1f93f",
+            "width": 60
+          }
+        ],
+        "name": "♥️",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NiwzMjYxZTJkZTVjYTMzNzZkYTI5NjQ4YWI4Njc5MGUxODEyY2EzMmRh",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3wQ2XcvpPycmEbNuLfCQvv/tracks",
+          "total": 4
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3wQ2XcvpPycmEbNuLfCQvv"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1QNKomGbcPl4q8ETdXL59E"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1QNKomGbcPl4q8ETdXL59E",
+        "id": "1QNKomGbcPl4q8ETdXL59E",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273f1bce44736a721a3409580f0",
+            "width": 640
+          }
+        ],
+        "name": "sad love songs",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "Miw0ZjhkNTdiNGRlYjI2YmEyMTFiMjEzMTgyZjY0NjYzNGM3NTAxZTFi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1QNKomGbcPl4q8ETdXL59E/tracks",
+          "total": 1
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1QNKomGbcPl4q8ETdXL59E"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/72F4G0yGyGNmHLEnlIddLO"
+        },
+        "href": "https://api.spotify.com/v1/playlists/72F4G0yGyGNmHLEnlIddLO",
+        "id": "72F4G0yGyGNmHLEnlIddLO",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2731303ee5b2e9a7a294efa35da",
+            "width": 640
+          }
+        ],
+        "name": "Fave Instrumentals",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NSxiZDg2ZTA4MjBlNDE4YTc5ZTA2MjdkOGFhZGQ4MjllNDI2MDFlZDZj",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/72F4G0yGyGNmHLEnlIddLO/tracks",
+          "total": 3
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:72F4G0yGyGNmHLEnlIddLO"
+      },
+      {
+        "collaborative": false,
+        "description": "Beats to relax, study and focus.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWQRwui0ExPn",
+        "id": "37i9dQZF1DWWQRwui0ExPn",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003c414e7daf34690c9f983f76e",
+            "width": null
+          }
+        ],
+        "name": "Lo-Fi Beats",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTYwNzc4OTEyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWWQRwui0ExPn/tracks",
+          "total": 450
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWWQRwui0ExPn"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/7Mdh4pbYO5CN4lP23xVOyu"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7Mdh4pbYO5CN4lP23xVOyu",
+        "id": "7Mdh4pbYO5CN4lP23xVOyu",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273160074c4d30216702688437c",
+            "width": 640
+          }
+        ],
+        "name": "Acoustic chill",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "Nyw2MDkxODU3ZDIwMGEyMGM2MGFhNDU0NGIxZWVlMGE1ZDQ5MWM4MTk0",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/7Mdh4pbYO5CN4lP23xVOyu/tracks",
+          "total": 3
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7Mdh4pbYO5CN4lP23xVOyu"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/0Ri0PPcwZyoWTL2unD2w0a"
+        },
+        "href": "https://api.spotify.com/v1/playlists/0Ri0PPcwZyoWTL2unD2w0a",
+        "id": "0Ri0PPcwZyoWTL2unD2w0a",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2730e8ba185f3e9f15630a7b5fbab67616d0000b27315ab843a3184de73913c14aaab67616d0000b273aaf8c068ffe217db825a1945ab67616d0000b273e469ed80db3808159bfe550e",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2730e8ba185f3e9f15630a7b5fbab67616d0000b27315ab843a3184de73913c14aaab67616d0000b273aaf8c068ffe217db825a1945ab67616d0000b273e469ed80db3808159bfe550e",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2730e8ba185f3e9f15630a7b5fbab67616d0000b27315ab843a3184de73913c14aaab67616d0000b273aaf8c068ffe217db825a1945ab67616d0000b273e469ed80db3808159bfe550e",
+            "width": 60
+          }
+        ],
+        "name": "survival + hope",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "OCwwYzZhMWNjODEzNjQzMGYxNWY2YTEyNGU5OTBlOWZhYzQyZTY1ZGY0",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/0Ri0PPcwZyoWTL2unD2w0a/tracks",
+          "total": 6
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:0Ri0PPcwZyoWTL2unD2w0a"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/1rla2HYJ0FIiPvyHfJaUB3"
+        },
+        "href": "https://api.spotify.com/v1/playlists/1rla2HYJ0FIiPvyHfJaUB3",
+        "id": "1rla2HYJ0FIiPvyHfJaUB3",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27386ece7c651fe4bf5cfb2f81c",
+            "width": 640
+          }
+        ],
+        "name": "Instrums",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "Myw3MjM1M2UwNjE4ZjYyNDk3NWYyZGUwMGQ1ZjNjY2I0Mzk2OGY1NDkw",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/1rla2HYJ0FIiPvyHfJaUB3/tracks",
+          "total": 2
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:1rla2HYJ0FIiPvyHfJaUB3"
+      },
+      {
+        "collaborative": false,
+        "description": "Easy listening soft pop hits for a pleasant day.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX1BzILRveYHb"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1BzILRveYHb",
+        "id": "37i9dQZF1DX1BzILRveYHb",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003adede38d73e13f7eff1726de",
+            "width": null
+          }
+        ],
+        "name": "Sunny Day",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTYwNzc4OTEyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX1BzILRveYHb/tracks",
+          "total": 60
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DX1BzILRveYHb"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/2rXmmq1rCI5nNuq3lGacEM"
+        },
+        "href": "https://api.spotify.com/v1/playlists/2rXmmq1rCI5nNuq3lGacEM",
+        "id": "2rXmmq1rCI5nNuq3lGacEM",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2730f258d2c9137e09c4b1cecb8ab67616d0000b2734a052b99c042dc15f933145bab67616d0000b27382030f7e260701d69652447eab67616d0000b273a72e095ba0855a68b9290897",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2730f258d2c9137e09c4b1cecb8ab67616d0000b2734a052b99c042dc15f933145bab67616d0000b27382030f7e260701d69652447eab67616d0000b273a72e095ba0855a68b9290897",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2730f258d2c9137e09c4b1cecb8ab67616d0000b2734a052b99c042dc15f933145bab67616d0000b27382030f7e260701d69652447eab67616d0000b273a72e095ba0855a68b9290897",
+            "width": 60
+          }
+        ],
+        "name": "Road",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "OSw3Mjg2N2Y4MWUzYzhmMWE3MzU4Y2ZjZmE2MGMwOGZmZWU1NjA1MWUw",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/2rXmmq1rCI5nNuq3lGacEM/tracks",
+          "total": 8
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:2rXmmq1rCI5nNuq3lGacEM"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/7uzwNsKhP4vhiyGeaSVYT2"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7uzwNsKhP4vhiyGeaSVYT2",
+        "id": "7uzwNsKhP4vhiyGeaSVYT2",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273666c661861f0f6acb87ddbde",
+            "width": 640
+          }
+        ],
+        "name": "🎤 SING ALONG 🎤",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NCxjY2VjNWIwNjBhOWQ1OGE5NTNlYTZmYzU2Y2NmZjVjZWJiYjIzOTI3",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/7uzwNsKhP4vhiyGeaSVYT2/tracks",
+          "total": 2
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7uzwNsKhP4vhiyGeaSVYT2"
+      },
+      {
+        "collaborative": false,
+        "description": "Put your headphones on and let the beat wake you and bring you up",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/460yS6vaLstIoMWuromonp"
+        },
+        "href": "https://api.spotify.com/v1/playlists/460yS6vaLstIoMWuromonp",
+        "id": "460yS6vaLstIoMWuromonp",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2731707f38289874e842f904403ab67616d0000b27395d1d98c5176e4f982bd73d6ab67616d0000b273c0f8acdf5d795beea969b5acab67616d0000b273d06bd6d3b1f258ba2bca597a",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2731707f38289874e842f904403ab67616d0000b27395d1d98c5176e4f982bd73d6ab67616d0000b273c0f8acdf5d795beea969b5acab67616d0000b273d06bd6d3b1f258ba2bca597a",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2731707f38289874e842f904403ab67616d0000b27395d1d98c5176e4f982bd73d6ab67616d0000b273c0f8acdf5d795beea969b5acab67616d0000b273d06bd6d3b1f258ba2bca597a",
+            "width": 60
+          }
+        ],
+        "name": "JUMP OUT OF THE SLUMP!",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MTIsYzNkN2I4ZmIzZGUwNmQ0ZmE4YWUwZjhiNWJmYzIxYmI3OTkzN2YwYw==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/460yS6vaLstIoMWuromonp/tracks",
+          "total": 9
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:460yS6vaLstIoMWuromonp"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/4sqjFozlHN1bKxroyNLkGr"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4sqjFozlHN1bKxroyNLkGr",
+        "id": "4sqjFozlHN1bKxroyNLkGr",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b27350a3147b4edd7701a876c6ceab67616d0000b273de1ef6794bce2d9e397717bfab67616d0000b273dedbec8cca43642f06533476ab67616d0000b273f77cc81c4679525b9f6b4447",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b27350a3147b4edd7701a876c6ceab67616d0000b273de1ef6794bce2d9e397717bfab67616d0000b273dedbec8cca43642f06533476ab67616d0000b273f77cc81c4679525b9f6b4447",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b27350a3147b4edd7701a876c6ceab67616d0000b273de1ef6794bce2d9e397717bfab67616d0000b273dedbec8cca43642f06533476ab67616d0000b273f77cc81c4679525b9f6b4447",
+            "width": 60
+          }
+        ],
+        "name": "If The World is Ending",
+        "owner": {
+          "display_name": "cgd90261",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/cgd90261"
+          },
+          "href": "https://api.spotify.com/v1/users/cgd90261",
+          "id": "cgd90261",
+          "type": "user",
+          "uri": "spotify:user:cgd90261"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "NTcsN2U3OGE2M2VjMDJiNTE1MzA0Y2UyYjQ1ZDkwY2U5MDk2OTIzNGU3OQ==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/4sqjFozlHN1bKxroyNLkGr/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4sqjFozlHN1bKxroyNLkGr"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3M5Rc8bLBcW3LAHOTEWQ6j"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3M5Rc8bLBcW3LAHOTEWQ6j",
+        "id": "3M5Rc8bLBcW3LAHOTEWQ6j",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27398acfa8c055deedc25e6081d",
+            "width": 640
+          }
+        ],
+        "name": "Fave rap beats",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "MyxjYjYwZjRiMWE5ZjFlZTIzMmMzMjA5OTFjMTQxMTE0NGY2MjBlZWQ1",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3M5Rc8bLBcW3LAHOTEWQ6j/tracks",
+          "total": 1
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3M5Rc8bLBcW3LAHOTEWQ6j"
+      },
+      {
+        "collaborative": false,
+        "description": "No need to stress out. Stay relaxed with these easy, upbeat songs.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWT7XSlwvR1ar"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWT7XSlwvR1ar",
+        "id": "37i9dQZF1DWT7XSlwvR1ar",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f000000031a9c145d6c6a8bbe4844e28c",
+            "width": null
+          }
+        ],
+        "name": "Totally Stress Free",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTYwNzc4OTEyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWT7XSlwvR1ar/tracks",
+          "total": 100
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWT7XSlwvR1ar"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/2lw0HDvLuyhuDHcZTcP3o2"
+        },
+        "href": "https://api.spotify.com/v1/playlists/2lw0HDvLuyhuDHcZTcP3o2",
+        "id": "2lw0HDvLuyhuDHcZTcP3o2",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2739d9126ec04bb005c687291a5",
+            "width": 640
+          }
+        ],
+        "name": "CODING MUSIC",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NSwzNzZmNDAyZDAwYWQwMDM2NTIxY2VkMTJmNGE5NGJhNTY3OGMwNGJi",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/2lw0HDvLuyhuDHcZTcP3o2/tracks",
+          "total": 14
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:2lw0HDvLuyhuDHcZTcP3o2"
+      },
+      {
+        "collaborative": false,
+        "description": "Instant classics from yesteryear to now in one sweet mix.",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWUH2AzNQzWua"
+        },
+        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUH2AzNQzWua",
+        "id": "37i9dQZF1DWUH2AzNQzWua",
+        "images": [
+          {
+            "height": null,
+            "url": "https://i.scdn.co/image/ab67706f00000003b77b201d9d5b9e1db7f63066",
+            "width": null
+          }
+        ],
+        "name": "Acoustic Hits: Oldies but Goodies",
+        "owner": {
+          "display_name": "Spotify",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/spotify"
+          },
+          "href": "https://api.spotify.com/v1/users/spotify",
+          "id": "spotify",
+          "type": "user",
+          "uri": "spotify:user:spotify"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTYwNzc4OTEyNiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWUH2AzNQzWua/tracks",
+          "total": 50
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:37i9dQZF1DWUH2AzNQzWua"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/2TN3lDb3OSqiur2F4kSRij"
+        },
+        "href": "https://api.spotify.com/v1/playlists/2TN3lDb3OSqiur2F4kSRij",
+        "id": "2TN3lDb3OSqiur2F4kSRij",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b273bd9474da45e0bf4b1cdb8114ab67616d0000b273cef574c31eedef6301d5568cab67616d0000b273d12a6f34c53f06fdf180d700ab67616d0000b273ef6b8e3464eb5ac09be99c0a",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b273bd9474da45e0bf4b1cdb8114ab67616d0000b273cef574c31eedef6301d5568cab67616d0000b273d12a6f34c53f06fdf180d700ab67616d0000b273ef6b8e3464eb5ac09be99c0a",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b273bd9474da45e0bf4b1cdb8114ab67616d0000b273cef574c31eedef6301d5568cab67616d0000b273d12a6f34c53f06fdf180d700ab67616d0000b273ef6b8e3464eb5ac09be99c0a",
+            "width": 60
+          }
+        ],
+        "name": "New beginnings",
+        "owner": {
+          "display_name": "Lenny",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/3wytubqe8gdcanop7i7hnzlom"
+          },
+          "href": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom",
+          "id": "3wytubqe8gdcanop7i7hnzlom",
+          "type": "user",
+          "uri": "spotify:user:3wytubqe8gdcanop7i7hnzlom"
+        },
+        "primary_color": null,
+        "public": true,
+        "snapshot_id": "NyxiNWU1MTgzNmExMDVhMDExYTFjZjJjOWY1M2Q5ZGM2NDlhMzBkYjJm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/2TN3lDb3OSqiur2F4kSRij/tracks",
+          "total": 4
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:2TN3lDb3OSqiur2F4kSRij"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3q3VTtXcgZXN1miDhWCKmj"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3q3VTtXcgZXN1miDhWCKmj",
+        "id": "3q3VTtXcgZXN1miDhWCKmj",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2733a609870fc2c2db46144d56fab67616d0000b273b5667d062b1be53b566a07f9ab67616d0000b273bb53ecc4d4e007f8c0464753ab67616d0000b273e14e94354488d0b825ce716c",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2733a609870fc2c2db46144d56fab67616d0000b273b5667d062b1be53b566a07f9ab67616d0000b273bb53ecc4d4e007f8c0464753ab67616d0000b273e14e94354488d0b825ce716c",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2733a609870fc2c2db46144d56fab67616d0000b273b5667d062b1be53b566a07f9ab67616d0000b273bb53ecc4d4e007f8c0464753ab67616d0000b273e14e94354488d0b825ce716c",
+            "width": 60
+          }
+        ],
+        "name": "Instrumental music",
+        "owner": {
+          "display_name": "Anna VanDuzer",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/anna_vanduzer"
+          },
+          "href": "https://api.spotify.com/v1/users/anna_vanduzer",
+          "id": "anna_vanduzer",
+          "type": "user",
+          "uri": "spotify:user:anna_vanduzer"
+        },
+        "primary_color": null,
+        "public": false,
+        "snapshot_id": "MTIyLGMwNjlkYzNkMzE2YWFiOTcyMzU4OGU4ODk5YjgxMWM0NTNlZDRlMTY=",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3q3VTtXcgZXN1miDhWCKmj/tracks",
+          "total": 33
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3q3VTtXcgZXN1miDhWCKmj"
+      }
+    ],
+    "limit": 20,
+    "next": "https://api.spotify.com/v1/users/3wytubqe8gdcanop7i7hnzlom/playlists?offset=20&limit=20",
+    "offset": 0,
+    "previous": null,
+    "total": 36
+  }
