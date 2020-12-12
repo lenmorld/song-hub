@@ -127,7 +127,7 @@ ul {
 	z-index: 2;
   }
   
-  .item .delete_edit_button: {
+  .item .delete_edit_button:hover {
 	color: limegreen;
   }
   
@@ -136,7 +136,7 @@ ul {
 	font-size: 1.5rem;
   }
   
-  .item .delete_edit_button span: {
+  .item .delete_edit_button span:hover {
 	cursor: pointer;
 	color: white;
   }
@@ -162,7 +162,7 @@ ul {
 	font-size: 1.5rem;
   }
   
-  .item .add_remove span: {
+  .item .add_remove span:hover {
 	cursor: pointer;
 	color: white;
   }
