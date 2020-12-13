@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineCloseSquare } from 'react-icons/ai'
 
+import Modal from './Modal'
 class SongForm extends React.Component {
   constructor(props) {
     super(props);
@@ -50,54 +51,55 @@ class SongForm extends React.Component {
     const isEditMode = this.props.song;
 
     return (
-      <div className="modal">
-        <form>
-          <div className="close_form">
-            <span onClick={this.props.onExit}>
-              <AiOutlineCloseSquare />
-            </span>
-          </div>
+      <Modal visible hide={this.props.onExit} containerStyle={{
+        // minWidth: '400px'
+      }}
+      contentStyle={{
+        display: 'block'
+      }}
+      >
+        <form className="modal-form">
           <h3>{isEditMode ? "Edit song" : "Create a new song"}</h3>
-          <p>
+          <div className="field">
             <label>ID:</label>
             <input
               name="id"
               value={this.state.id}
               disabled={isEditMode}
             />
-          </p>
-          <p>
+          </div>
+          <div className="field">
             <label>Title:</label>
             <input
               name="title"
               onChange={this.onChangeFormInput}
               value={this.state.title}
             />
-          </p>
-          <p>
+          </div>
+          <div className="field">
             <label>Artist:</label>
             <input
               name="artist"
               onChange={this.onChangeFormInput}
               value={this.state.artist}
             />
-          </p>
-          <p>
+          </div>
+          <div className="field">
             <label>Album:</label>
             <input
               name="album"
               onChange={this.onChangeFormInput}
               value={this.state.album}
             />
-          </p>
+          </div>
 
-          <div className="submit">
+          <div className="submit" style={{ marginTop: '1rem'}}>
             <button onClick={this.onSubmitForm}>
               {isEditMode ? "EDIT" : "CREATE"}
             </button>
           </div>
         </form>
-      </div>
+      </Modal>
     );
   }
 }

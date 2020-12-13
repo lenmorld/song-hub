@@ -10,6 +10,7 @@ const PlaylistPlayback = ({ playlistId, onClose }) => {
   return (
     <Modal visible={!!playlistId} hide={onClose}>
       <iframe
+        className="playlist"
         title="spotiy playlist playback"
         src={`https://open.spotify.com/embed/playlist/${playlistId}`}
         width="300"
@@ -23,7 +24,7 @@ const PlaylistPlayback = ({ playlistId, onClose }) => {
 }
 
 const Playlists = () => {
-  const [playlists, setPlaylists] = useState(playlist.items)
+  const [playlists, setPlaylists] = useState([])
   const [playlistOnPlayback, setPlaylistOnPlayback] = useState(null)
 
   const hidePlayback = () => setPlaylistOnPlayback(null)
