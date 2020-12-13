@@ -25,7 +25,7 @@ import ReactDOM from 'react-dom'
 import { AiOutlineCloseSquare } from 'react-icons/ai'
 
 // A reusable Modal component based on React Portal
-const Modal = ({ hide, visible, children }) => {
+const Modal = ({ hide, visible, children, containerStyle, contentStyle }) => {
   // this.modalElement = document.createElement("div");
   const modalElement = document.querySelector('#modal')
 
@@ -39,7 +39,10 @@ const Modal = ({ hide, visible, children }) => {
     <div className="spotify_modal" onClick={handleClickOutside}>
       <div
         className="spotify_wrapper"
-        style={{ width: '400px', height: '400px', overflow: 'hidden' }}
+        style={{
+          overflow: 'hidden',
+          ...containerStyle,
+        }}
       >
         <div className="close_form">
           <span onClick={hide}>
@@ -49,8 +52,10 @@ const Modal = ({ hide, visible, children }) => {
         <div
           style={{
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
+            ...contentStyle,
           }}
         >
           {children}
