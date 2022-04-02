@@ -62,10 +62,14 @@ const Playlists = () => {
                       //   )}
                     }}
                   />
-                  <img
-                    src={item.images[0].url}
-                    style={{ maxWidth: '150px', objectFit: 'cover' }}
-                  />
+                  {item.images.length ? (
+                    <img
+                      src={item.images[0].url}
+                      style={{ maxWidth: '150px', objectFit: 'cover' }}
+                    />
+                  ): null
+                  }
+
                 </div>
               </div>
             </li>
